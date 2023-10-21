@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Decor</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!--Boxicons CDN Link-->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body class="w-full h-full bg-white relative">
+    <!-- HEADER -->
+    <header class="header w-full md:h-[111px] h-[81px] py-0 md:px-[70px] px-[30px] bg-white border-b-2 flex justify-between items-center sticky top-0 overflow-hidden ease-in-out duration-500 z-[1000000]">
+        <div class="logo w-full md:max-w-[90px] max-w-[60px] mr-5 relative">
+            <a href="index.html" class="w-full max-w-[10px] cursor-pointer">
+                <img src="images/3.png" class="w-full h-full md:max-w-[90px] max-w-[60px]">
+            </a>
+        </div>
+
+            <div class="close hidden absolute top-[50%] right-[2%] z-[10000] ">
+                <i class='bx bx-x text-[40px] text-black cursor-pointer'></i>
+            </div>
+
+            <ul class="links w-full md:gap-6 md:items-center md:max-w-[300px] md:text-sm md:text-black text-center relative md:inline-flex md:flex-row hidden flex-col justify-center items-center bg-white gap-[10px]">
+                <li class="link active w-full hover:font-[600]"><a href="index.html">Home</a></li>
+                <li class="link w-full hover:font-[600]"><a href="product.html">Products</a></li>
+                <li class="link w-full hover:font-[600]"><a href="about.html">About</a></li>
+                <li class="link w-full hover:font-[600]"><a href="store.html">Store</a></li>
+            </ul>
+
+            <ul class="account w-full md:flex md:justify-end md:items-end md:gap-2 md:max-w-[120px] md:text-lg md:text-center md:relative hidden">
+                <li class="link md:pt-[2px] md:px-[6px] md:text-black md:cursor-pointer hover:bg-black hover:text-white hover:rounded-[50px] relative"><i class='bx bx-search srchbtn relative'></i></li>
+                <li class="link md:pt-[2px] md:px-[6px] text-black cursor-pointer hover:bg-black hover:text-white hover:rounded-[50px] relative"><i class='bx bx-user showForm relative'></i></li>
+                <li class="link pt-[2px] px-[6px] text-black cursor-pointer hover:bg-black hover:text-white hover:rounded-[50px] relative"><i class='bx bx-cart-alt showCart relative' >
+                    <span class="cartNotif text-[10px] text-white bg-red-500 font-[500] rounded-[20px] h-[20px] w-[20px] absolute top-0 left-[107%] border-2 border-solid border-white flex justify-center items-center">0</span>
+                </i>
+                </li>
+                
+            </ul>
+
+        <div class="menu-bar md:hidden md:justify-between md:items-center md:gap-3 flex">
+            <i class='bx bx-search find pt-[4px] pb-[3px] px-[4px] rounded-[50px] text-[32px] text-center cursor-pointer hover:bg-black hover:text-white'></i>
+            <i class='bx bx-menu text-4xl cursor-pointer'></i>
+        </div>
+    </header>
+
+    <!-- <div id="cursor"><div id="circle"></div></div> -->
+
+
+    <!-- -----------------------SEARCH------------------------- -->
+
+
+    <div class="searching fixed top-[-100%] bg-gray-200 w-full h-[300px] flex justify-center py-7 ease-in-out duration-500 z-[100000]">
+        <form action="" class="s-form relative w-full md:max-w-[400px] max-w-[300px] flex justify-center items-end">
+            <input type="text" placeholder="Search here..." class="search relative border-[3px] border-solid border-black rounded-[13px] bg-white w-full md:h-[45px] h-[40px] py-[3px] pr-[30px] pl-[42px] md:text-[16px] text-[14px]">
+            <button type="reset" class="reset absolute md:text-[25px] text-[22px] md:top-[55%] top-[51%] md:right-[-5px] right-[-2px] text-[#929292;]"><i class='bx bx-x'></i></button>
+            <button type="submit" class="s-btn absolute text-[25px] md:top-[55%] top-[50%] left-[20px] text-black"><i class='bx bx-search'></i></button>
+        </form>
+
+        <div class="close-search">
+            <i class='bx bx-x xSearch text-black border-2 border-solid border-black rounded-[20px] md:pt-[1px] md:pb-0 md:px-[1px] p-0 text-[32px] cursor-pointer hover:text-white hover:border-white hover:rounded-[20px] hover:bg-black'></i>
+        </div>
+    </div>
+
+
+    <!-- -----------------------LOGIN------------------------- -->
+    <div class="login fixed md:top-[17%] top-0 right-[-100%] bg-white w-full md:max-w-[400px] max-w-[100%] md:h-auto h-full pt-5 pb-10 px-10 z-[10000000] md:rounded-[16px] rounded-0 overflow-y-auto md:border-2 border-none md:border-solid border-black ease-in-out duration-500">
+        <div class="w-full flex flex-col justify-center relative">
+            <div class="w-full flex justify-end">
+                <i class='bx bx-x closeForm text-[24px] cursor-pointer'></i>
+            </div>
+            <h1 class="text-black text-[24px] font-[600] mb-5">Log In</h1>
+
+            <form action="" autocomplete="off" class="flex flex-col justify-center relative">
+                <label for="email" class="text-[14px] relative">Email Address</label>
+                <input type="email" placeholder="Enter email address" class="bg-gray-200 rounded-[8px] py-[14px] px-5 relative" id="email">
+                
+                <div class="relative mb-5">
+                    <label for="pass" class="mt-[10px] text-[14px] relative">Password</label>
+                    <input type="password" placeholder="Enter password" class="bg-gray-200 rounded-[8px] py-[14px] px-5 relative md:w-[317px] w-full" id="pass">
+                    <i class='bx bxs-low-vision absolute top-[50%] md:left-[88%] sm:left-[93%] left-[90%] text-[24px] cursor-pointer text-gray-500' id="eye"></i>
+                </div>
+                
+                <button class="w-full text-white bg-black font-[500] py-[16px] rounded-[8px] border-2 border-solid border-black hover:bg-white hover:text-black">Log In</button>
+                <a class="w-full text-black hover:text-gray-500 text-center font-[600] my-[15px] cursor-pointer">Sign Up</a>
+
+                <h1 class="or w-full text-gray-500 text-[14px] relative text-center">or login with</h1>
+
+                <div class="w-full h-auto flex justify-between items-center mt-5 gap-3">
+                    <button class="connect flex justify-center items-center gap-1 bg-white py-2.5 w-full rounded-[6px] cursor-pointer"><svg height="30px" width="30px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 408.788 408.788" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#475993;" d="M353.701,0H55.087C24.665,0,0.002,24.662,0.002,55.085v298.616c0,30.423,24.662,55.085,55.085,55.085 h147.275l0.251-146.078h-37.951c-4.932,0-8.935-3.988-8.954-8.92l-0.182-47.087c-0.019-4.959,3.996-8.989,8.955-8.989h37.882 v-45.498c0-52.8,32.247-81.55,79.348-81.55h38.65c4.945,0,8.955,4.009,8.955,8.955v39.704c0,4.944-4.007,8.952-8.95,8.955 l-23.719,0.011c-25.615,0-30.575,12.172-30.575,30.035v39.389h56.285c5.363,0,9.524,4.683,8.892,10.009l-5.581,47.087 c-0.534,4.506-4.355,7.901-8.892,7.901h-50.453l-0.251,146.078h87.631c30.422,0,55.084-24.662,55.084-55.084V55.085 C408.786,24.662,384.124,0,353.701,0z"></path> </g></svg> <span>Facebook</span></button>
+
+                    <button class="connect flex justify-center items-center gap-1 bg-white py-2.5 w-full rounded-[6px] cursor-pointer"><svg height="30px" width="30px" viewBox="-0.5 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Google-color</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Color-" transform="translate(-401.000000, -860.000000)"> <g id="Google" transform="translate(401.000000, 860.000000)"> <path d="M9.82727273,24 C9.82727273,22.4757333 10.0804318,21.0144 10.5322727,19.6437333 L2.62345455,13.6042667 C1.08206818,16.7338667 0.213636364,20.2602667 0.213636364,24 C0.213636364,27.7365333 1.081,31.2608 2.62025,34.3882667 L10.5247955,28.3370667 C10.0772273,26.9728 9.82727273,25.5168 9.82727273,24" id="Fill-1" fill="#FBBC05"> </path> <path d="M23.7136364,10.1333333 C27.025,10.1333333 30.0159091,11.3066667 32.3659091,13.2266667 L39.2022727,6.4 C35.0363636,2.77333333 29.6954545,0.533333333 23.7136364,0.533333333 C14.4268636,0.533333333 6.44540909,5.84426667 2.62345455,13.6042667 L10.5322727,19.6437333 C12.3545909,14.112 17.5491591,10.1333333 23.7136364,10.1333333" id="Fill-2" fill="#EB4335"> </path> <path d="M23.7136364,37.8666667 C17.5491591,37.8666667 12.3545909,33.888 10.5322727,28.3562667 L2.62345455,34.3946667 C6.44540909,42.1557333 14.4268636,47.4666667 23.7136364,47.4666667 C29.4455,47.4666667 34.9177955,45.4314667 39.0249545,41.6181333 L31.5177727,35.8144 C29.3995682,37.1488 26.7323182,37.8666667 23.7136364,37.8666667" id="Fill-3" fill="#34A853"> </path> <path d="M46.1454545,24 C46.1454545,22.6133333 45.9318182,21.12 45.6113636,19.7333333 L23.7136364,19.7333333 L23.7136364,28.8 L36.3181818,28.8 C35.6879545,31.8912 33.9724545,34.2677333 31.5177727,35.8144 L39.0249545,41.6181333 C43.3393409,37.6138667 46.1454545,31.6490667 46.1454545,24" id="Fill-4" fill="#4285F4"> </path> </g> </g> </g> </g></svg> <span>Google</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- -----------------------ADD TO CART------------------------- -->
+    <div class="addToCart fixed md:top-[17%] top-0 right-[-100%] bg-white w-full md:max-w-[400px] max-w-[100%] md:h-[500px] h-full pt-5 pb-10 px-10 z-[10000000] md:rounded-[16px] rounded-0 overflow-y-auto md:border-2 border-none md:border-solid border-black ease-in-out duration-500">
+        <div class="w-full h-auto flex flex-col md:justify-center justify-start items-center">
+            <div class="w-full flex justify-end">
+                <i class='bx bx-x closeCart text-[24px] cursor-pointer'></i>
+            </div>
+            <div class="w-full border-b-2 border-solid border-black pb-2">
+                <h1 class="text-black text-[20px] font-[500] text-center">Shopping Cart</h1>
+            </div>
+
+            <div class="list w-full md:h-[278px] h-[500px] pr-[7px] overflow-y-auto"></div>
+
+
+            <div class="w-full flex justify-between border-t-2 border-solid border-black pb-2.5">
+                <h1 class="text-black text-[16px] font-[500]">Total</h1>
+                <h1 class="total"></h1>
+            </div>
+        </div>
+
+        <div class="relative w-full flex flex-row justify-center items-center border-t-2 border-solid border-black pt-2.5">
+            <button class="bg-black hover:bg-white border-2 border-solid border-black rounded-[6px] font-[500] text-white hover:text-black py-2.5 px-10">Check Out</button>
+        </div>
+    </div>
+
+    <!----------- CONTENT------------>
+    <section class="abt w-full h-full flex flex-col justify-center bg-white relative md:py-[100px] py-[50px] px-[20px]">
+        <div class="about w-full h-full max-w-[1200px] flex md:flex-row flex-col justify-center relative my-0 mx-[auto]">
+            <div class="w-full">
+                <div class="abt-content w-full h-full max-w-[400px] flex flex-col items-left gap-6 py-5 pr-5">
+                    <h1 class="headings lg:text-[45px] text-[35px] font-[600] lg:leading-[50px] leading-[40px]">Our <br> History</h1>
+                    <p class="lg:text-[16px] text-[14px] lg:leading-[20px] leading-[18px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos suscipit magni molestiae excepturi cupiditate, rerum aut laborum quae? <br> <br> Nesciunt distinctio omnis laudantium necessitatibus, perferendis laboriosam tempora sunt vel atque eaque dolores, beatae inventore, reprehenderit numquam officiis! Labore sapiente neque doloribus.</p>
+                </div>
+            </div>
+
+            <img src="images/about.jpg" alt="" class="abt-img w-full h-full lg:max-w-[700px] md:max-w-[450px] max-w-[100%]">
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- SERVICE -->
+
+    <section class="services bg-white w-full h-full flex justify-center items-center py-10 px-5">
+        <div class="service w-[auto] h-full bg-white p-10 gap-10 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1">
+            <div class="flex justify-center items-center gap-2">
+                <div class="flex justify-center itemas-center">
+                    <i class='bx bxs-truck text-[50px] text-black'></i>
+                </div>
+
+                <div class="serve flex flex-col justify-center">
+                    <h1 class="md:text-[18px] text-[16px] font-[600] text-black">Free Delivery</h1>
+                    <p class="md:text-[14px] text-[12px] text-black">Lorem ipsum dolor sit amet,</p>
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center gap-2">
+                <div class="flex justify-center itemas-center">
+                    <i class='bx bx-support text-[50px] text-black'></i>
+                </div>
+
+                <div class="serve flex flex-col justify-center">
+                    <h1 class="md:text-[18px] text-[16px] font-[600] text-black">Support 24/7</h1>
+                    <p class="md:text-[14px] text-[12px] text-black">Lorem ipsum dolor sit amet,</p>
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center gap-2">
+                <div class="flex justify-center itemas-center">
+                    <i class='bx bxs-cart-alt  text-[50px] text-black'></i>
+                </div>
+
+                <div class="serve flex flex-col justify-center">
+                    <h1 class="md:text-[18px] text-[16px]  font-[600] text-black">Secure Shopping</h1>
+                    <p class="md:text-[14px] text-[12px] text-black">Lorem ipsum dolor sit amet,</p>
+                </div>
+            </div>
+            <div class="flex justify-center items-center gap-2">
+                <div class="flex justify-center itemas-center">
+                    <i class='bx bxs-certification relative text-[50px] text-black' ></i>
+                </div>
+
+                <div class="serve flex flex-col justify-center">
+                    <h1 class="md:text-[18px] text-[16px]  font-[600] text-black">Original Products</h1>
+                    <p class="md:text-[14px] text-[12px] text-black">Lorem ipsum dolor sit amet,</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- NEWSLETTER -->
+
+    <section class="newsletter w-full h-full bg-gray-200 flex lg:flex-row flex-col justify-center items-center lg:gap-22 gap-[30px] mt-10 py-[70px] px-10 relative">
+        <div class="news h-full relative">
+            <h1 class="md:text-[40px] text-[30px] font-[700] text-black lg:text-left text-center">Our Newsletter</h1>
+            <p class="md:text-[14px] text-[12px] text-black lg:text-left text-center">Subscribe our newsletter and be updated.</p>
+
+        </div>
+
+        <form action="" autocomplete="off" class="subscribe h-full relative">
+            <input type="email" placeholder="Your email address" class="md:w-[420px] w-[350px] md:h-[50px] h-[48px] relative bg-white border-2 border-solid border-black rounded-[30px] pl-[20px] md:text-[16px] text-[14px]">
+            <button type="submit" class="absolute top-[50%] right-0 text-white text-center bg-black rounded-[20px] border-2 border-solid border-black sm:py-[6px] py-[9px] sm:px-[20px] px-[9px] cursor-pointer md:text-[16px] text-[14px] hover:text-black hover:bg-white font-[600]">
+                <span class="sm:block hidden">Subscribe </span><i class='bx bx-right-arrow-alt sm:hidden block'></i>
+            </button>
+        </form>
+
+        <div class="newsletter-bg bg-gray-200 absolute bottom-0 left-[50%] w-full h-[50px]"></div>
+
+    </section>
+
+
+
+
+    <div class="scroll-up flex justify-center items-center text-[25px] opacity-0 text-white pointer-events-none transition-[.5s] fixed bottom-0 sm:right-[29px] right-[20px] h-[50px] w-[50px] z-[10000]">
+        <a href="#"><i class='bx bx-up-arrow-alt sm:text-[30px] text-[25px] text-black bg-white border-2 border-solid border-black sm:p-[12px] p-[10px] rounded-[40px] hover:bg-black hover:border-white hover:text-white cursor-pointer'></i></a>
+    </div>
+
+
+    <footer class="bg-black w-full h-full flex justify-center items-center p-10 relative rounded-t-[20px]">
+        <div class="footer w-[auto] h-full gap-10 relative grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1">
+            <div class="f-logo relative flex sm:justify-start justify-center sm:items-start items-center">
+                <img src="images/4.png" alt="" class="w-full sm:h-[200px] h-full sm:max-w-[200px] max-w-[150px]">
+            </div>
+
+            <div class="info flex flex-col sm:justify-start justify-center sm:items-start items-center text-white relative">
+                <h1 class="text-[24px] font-[700] py-[10px]">Customer Service</h1>
+                <a href="" class="text-white no-underline cursor-pointer md:text-[16px] text-[14px] hover:font-[600]">Help & Support</a>
+                <a href="" class="text-white no-underline cursor-pointer md:text-[16px] text-[14px] hover:font-[600]">Returns & Refunds</a>
+                <a href="" class="text-white no-underline cursor-pointer md:text-[16px] text-[14px] hover:font-[600]">Find a Store</a>
+                <a href="" class="text-white no-underline cursor-pointer md:text-[16px] text-[14px] hover:font-[600]">FAQ's</a>
+            </div>
+
+            <div class="info flex flex-col sm:justify-start justify-center sm:items-start items-center text-white relative">
+                <h1 class="text-[24px] font-[700] py-[10px]">Company Information</h1>
+                <a href="" class="text-white no-underline cursor-pointer md:text-[16px] text-[14px] hover:font-[600]">About Us</a>
+                <a href="" class="text-white no-underline cursor-pointer md:text-[16px] text-[14px] hover:font-[600]">Contact Us</a>
+                <a href="" class="text-white no-underline cursor-pointer md:text-[16px] text-[14px] hover:font-[600]">Privacy Policy</a>
+                <a href="" class="text-white no-underline cursor-pointer md:text-[16px] text-[14px] hover:font-[600]">Terms & Conditions</a>
+            </div>
+
+            <div class="info flex flex-col sm:justify-start justify-center sm:items-start items-center text-white relative">
+                <h1 class="text-[24px] font-[700] py-[10px]">Newsletter</h1>
+                <form action="" class="letter relative">
+                    <input type="email" placeholder="Your email address" class="send relative w-full sm:max-w-[300px] max-w-[280px] h-[40px] sm:text-[14px] text-[12px] text-black rounded-[20px] lg:pl-[20px] pl-[15px]">
+                    <button type="submit" class="absolute text-[18px] top-[50%] right-0 bg-black border-2 border-solid border-black pt-[4px] pb-[1px] px-[7px] rounded-[50%] hover:bg-white hover:text-black"><i class='bx bx-right-arrow-alt'></i></button>
+                </form>
+
+                <div class="soc flex sm:justify-start justify-center sm:items-start items-center gap-3 text-white text-[32px] mt-3">
+                    <a href="" class="text-[30px] cursor-pointer hover:scale-125"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="" class="text-[30px] cursor-pointer hover:scale-125"><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href="" class="text-[30px] cursor-pointer hover:scale-125"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

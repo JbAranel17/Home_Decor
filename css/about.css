@@ -1,0 +1,43 @@
+.headings{
+    font-family: 'DM Serif Display', serif;
+}
+
+
+/* -------------SERVICE------------- */
+
+.service{
+    box-shadow: 22px 23px 52px -20px rgba(0,0,0,0.37);
+-webkit-box-shadow: 22px 23px 52px -20px rgba(0,0,0,0.37);
+-moz-box-shadow: 22px 23px 52px -20px rgba(0,0,0,0.37);
+    border-radius: 16px;
+}
+
+
+/* ---------------NEWSLETTER--------------- */
+
+.bxs-certification::after{
+    position: absolute;
+    content: '100%';
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    font-size: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.subscribe button{
+    transform: translate(-5%, -50%);
+}
+
+.newsletter-bg{
+    transform: translate(-50%, 50%);
+}
+
+@media (max-width: 640px){
+    .subscribe button{
+        transform: translate(-15%, -50%);
+    }
+}

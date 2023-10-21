@@ -1,0 +1,22 @@
+
+/* ---------------SCROLL UP------------- */
+.scroll-up.active{
+    bottom: 10px;
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(-55px);
+}
+
+
+/* ----------------FOOTER------------- */
+.info h1{
+    font-family: 'DM Serif Display', serif;
+}
+
+.letter button{
+    transform: translate(-10%, -50%);
+}
+
+.soc a{
+    transition: all .3s;
+}

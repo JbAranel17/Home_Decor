@@ -1,0 +1,30 @@
+.items {
+    transition: all .3s ease;
+}
+
+.items .heading {
+    font-family: 'DM Serif Display', serif;
+}
+
+.items .categ .categories.category-active{
+    font-weight: 600;
+    color: #000;
+}
+
+.category h2{
+    box-shadow: 6px 10px 30px -8px rgba(0,0,0,0.77);
+-webkit-box-shadow: 6px 10px 30px -8px rgba(0,0,0,0.77);
+-moz-box-shadow: 6px 10px 30px -8px rgba(0,0,0,0.77);
+}
+
+.card{
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    border: 2px solid black;
+    border-radius: 16px;
+    margin: 4px auto;
+    justify-content: center;
+    align-items: center;
+}
+
