@@ -16,14 +16,12 @@ openMenu.onclick = ()=>{
     account.classList.add("active");
     closeMenu.classList.add("active");
     search.classList.remove("active");
-    body.classList.add("disabledScroll");
 }
 
 closeMenu.onclick = ()=>{
     links.classList.remove("active");
     account.classList.remove("active");
     closeMenu.classList.remove("active");
-    body.classList.remove("disabledScroll");
 }
 
 //scrollUp
